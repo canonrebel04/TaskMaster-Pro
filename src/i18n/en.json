@@ -1,0 +1,39 @@
+{
+  "Common": {
+    "tasks": "Tasks",
+    "calendar": "Calendar",
+    "statistics": "Statistics",
+    "profile": "Profile",
+    "taskDetails": "Task Details",
+    "back": "Back",
+    "search": "Search",
+    "searchPlaceholder": "Search tasks...",
+    "undo": "Undo",
+    "offlineMessage": "You are currently offline",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "Auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "Tasks": {
+    "newTask": "New Task",
+    "title": "Title",
+    "description": "Description",
+    "dueDate": "Due Date",
+    "status": "Status",
+    "priority": "Priority",
+    "category": "Category",
+    "pending": "Pending",
+    "inProgress": "In Progress",
+    "completed": "Completed"
+  }
+}

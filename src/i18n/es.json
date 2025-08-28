@@ -1,0 +1,39 @@
+{
+  "Common": {
+    "tasks": "Tareas",
+    "calendar": "Calendario",
+    "statistics": "Estadísticas",
+    "profile": "Perfil",
+    "taskDetails": "Detalles de la Tarea",
+    "back": "Atrás",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar tareas...",
+    "undo": "Deshacer",
+    "offlineMessage": "Estás desconectado",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "save": "Guardar",
+    "cancel": "Cancelar"
+  },
+  "Auth": {
+    "login": "Iniciar Sesión",
+    "signup": "Registrarse",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "noAccount": "¿No tienes una cuenta?",
+    "hasAccount": "¿Ya tienes una cuenta?"
+  },
+  "Tasks": {
+    "newTask": "Nueva Tarea",
+    "title": "Título",
+    "description": "Descripción",
+    "dueDate": "Fecha de Vencimiento",
+    "status": "Estado",
+    "priority": "Prioridad",
+    "category": "Categoría",
+    "pending": "Pendiente",
+    "inProgress": "En Progreso",
+    "completed": "Completada"
+  }
+}

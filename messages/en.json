@@ -1,0 +1,17 @@
+{
+  "app": {
+    "title": "TaskMaster Pro",
+    "description": "Master Your Tasks, Master Your Day"
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "calendar": "Calendar",
+    "profile": "Profile",
+    "stats": "Statistics"
+  }
+}
