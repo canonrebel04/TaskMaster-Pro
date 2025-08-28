@@ -41,7 +41,23 @@ A comprehensive task management application built with Next.js, featuring a beau
 Before you begin, ensure you have the following installed:
 - Node.js (v18.0.0 or higher)
 - npm (v9.0.0 or higher)
-- Git
+- Git (v2.30.0 or higher)
+
+## Git Setup
+
+1. Configure Git with your credentials:
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+```
+
+2. If you want to keep your email private on GitHub:
+   - Visit https://github.com/settings/emails
+   - Enable "Keep my email address private"
+   - Use the provided no-reply email for git config:
+```bash
+git config --global user.email "your-no-reply-address@users.noreply.github.com"
+```
 
 ## Installation
 
@@ -127,14 +143,63 @@ npm run dev
 
 ## Building for Production
 
-1. Create a production build:
+1. Clean the build cache:
+```bash
+rm -rf .next
+# or on Windows
+rmdir /s /q .next
+```
+
+2. Create a production build:
 ```bash
 npm run build
 ```
 
-2. Start the production server:
+3. Start the production server:
 ```bash
 npm run start
+```
+
+## Deployment
+
+### Vercel (Recommended)
+The easiest way to deploy your Next.js app is to use [Vercel](https://vercel.com):
+
+1. Install Vercel CLI:
+```bash
+npm i -g vercel
+```
+
+2. Deploy:
+```bash
+vercel
+```
+
+### Manual Deployment
+For other hosting platforms:
+
+1. Set up environment variables on your hosting platform
+2. Configure build command: `npm run build`
+3. Configure start command: `npm run start`
+4. Set Node.js version to 18.x or higher
+
+### Large File Handling
+If you have large files (>50MB):
+
+1. Install Git LFS:
+```bash
+# Windows (with Chocolatey)
+choco install git-lfs
+
+# macOS
+brew install git-lfs
+```
+
+2. Initialize Git LFS:
+```bash
+git lfs install
+git lfs track "*.pack"
+git add .gitattributes
 ```
 
 ## Available Scripts
@@ -186,6 +251,43 @@ src/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Troubleshooting
+
+### Build Issues
+1. If you encounter build errors:
+```bash
+# Clear all caches
+rm -rf .next
+npm cache clean --force
+# Reinstall dependencies
+rm -rf node_modules
+npm install
+```
+
+2. For TypeScript errors:
+```bash
+# Run type checking
+npm run typecheck
+```
+
+### Git Issues
+1. Email privacy restrictions:
+   - Use the GitHub-provided no-reply email address
+   - Or make your email public in GitHub settings
+
+2. Large file errors:
+   - Use Git LFS for large files
+   - Or add large files to .gitignore
+
+### Database Connection Issues
+1. Check Supabase connection:
+   - Verify credentials in .env.local
+   - Check IP allowlist in Supabase dashboard
+   - Verify RLS policies
+
 ## Support
 
-For support, email support@taskmasterpro.com or join our Discord channel.
+For support:
+- Open an issue on GitHub
+- Email support@taskmasterpro.com
+- Join our [Discord channel](https://discord.gg/taskmasterpro)
